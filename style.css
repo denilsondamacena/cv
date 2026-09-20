@@ -238,9 +238,12 @@ a:hover {
     }
 
     .cv-wrapper {
-        padding: 20px 10px;
+        width: 100%;
+        max-width: 100%;
+        padding: 24px 18px;
         border: none;
         box-shadow: none;
+        border-radius: 0;
     }
 
     .actions-bar {
@@ -252,13 +255,64 @@ a:hover {
 
     .two-columns {
         grid-template-columns: 1fr;
-        gap: 6px;
+        gap: 8px;
     }
 
     .job-meta-row {
         flex-direction: column;
         align-items: flex-start;
         gap: 1px;
+    }
+
+    .meta-contacts {
+        gap: 5px;
+    }
+
+    .col p,
+    .cv-list li,
+    .cv-footer p {
+        font-size: 11px;
+        line-height: 1.45;
+    }
+}
+
+/* Celulares menores */
+@media (max-width: 480px) {
+    body {
+        padding: 0;
+    }
+
+    .cv-wrapper {
+        padding: 20px 14px;
+    }
+
+    .applicant-name {
+        font-size: 19px;
+    }
+
+    .headline {
+        font-size: 11.5px;
+    }
+
+    .meta-contacts,
+    .lang-skills {
+        font-size: 10.5px;
+    }
+
+    .block-heading {
+        font-size: 10.5px;
+    }
+
+    .col p,
+    .cv-list li,
+    .cv-footer p {
+        font-size: 10.5px;
+        line-height: 1.45;
+    }
+
+    .btn-download {
+        width: 100%;
+        justify-content: center;
     }
 }
 
